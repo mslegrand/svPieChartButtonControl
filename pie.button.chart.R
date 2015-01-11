@@ -45,7 +45,7 @@ doc[['root']](
           ),
           text( labels[i],cxy=(textPos[i,]), 
             stroke='black', stroke.width=0.4, 
-            fill='white', font.size=12
+            fill='white', font.size=8
           ),
           animateMotion( 
             from=c(0,0), to=midpoints[i,],
