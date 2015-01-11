@@ -1,9 +1,10 @@
 
 library(shiny)
 shinyUI(bootstrapPage(
-  h3('Press to make a choice from the pie chart button'),
+  h3('An SVG Control Button'),
+  p('Press a piece of the pie chart to make a choice'),
   htmlOutput("pieButton"), 
-  h3('The selection is shown below'),
+  p('The selection results when returned to the server are shown below'),
   verbatimTextOutput("results")
   )
 )
