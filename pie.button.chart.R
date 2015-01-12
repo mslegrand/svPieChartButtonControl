@@ -7,13 +7,18 @@ library(svgR)
 #' @details
 #' @description Selector in shape of a pie chart
 #' 
-fn<-function(){
-colors<-c("red","yellow", "lightblue", "lightgreen", "pink","brown", "orange")
-labels<-LETTERS
-N<-5 #number of choices (<= number of colors)
-rawData<-runif(N,10,30)
-center<-c(30,30) #circle center
-radius<-20
+pieButton<-
+function(
+  N=5, #number of choices (<= number of colors)
+  rawData=c(10,20,30,15,15), 
+  labels=LETTERS,
+  colors=c("red","yellow", "lightblue", "lightgreen", 
+           "pink","brown", "orange"),
+  center=c(30,30),
+  radius=20
+  )
+{
+  #runif(N,10,30)
 OD<-1.2 #expand factor
 dur<-0.5 #how fast
 #
